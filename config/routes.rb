@@ -1,6 +1,7 @@
 RailsApp::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  root 'tasks#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
@@ -12,6 +13,7 @@ RailsApp::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :tasks, only: [:index, :create, :update, :destroy]
 
   # Sample resource route with options:
   #   resources :products do
