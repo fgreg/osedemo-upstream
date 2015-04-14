@@ -1,0 +1,1 @@
+require_dependency Rails.root.join("lib/patches/add_patch_method").to_s
